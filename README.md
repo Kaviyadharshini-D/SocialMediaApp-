@@ -1,3 +1,2 @@
-![login]("C:\Users\PKN\Downloads\login.jpeg)
-![upload]("C:\Users\PKN\Downloads\post.jpeg)
-
+![Login](https://example.com/login.jpg)
+![Upload](https://example.com/post.jpg)
