@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('C:\\Users\\PKN\\OneDrive\\Documents\\6th sem\\angular\\Socialmediaapp\\src\\assets\\background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background-image: url('C:\\Users\\PKN\\Downloads\\logo (2).png');
+    left: -60px;
+    top: -80px;
+    transform: translate(0);
+}
+
+.shape:last-child{
+    background-image: url('C:\\Users\\PKN\\Downloads\\logo (2).png');
+    right: -50px;
+    bottom: -50px;
+    transform: translate(0);
+}
+
+form{
+    height: auto;
+    width: 500px; 
+    margin-top: 150px; /* Adjusted margin */
+    position: relative; /* Changed to relative */
+    color: rgb(13, 63, 13);
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    padding: 50px 35px;
+}
+
+form *{
+    color: #080710;
+}
+
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: green;
+    z-index: 9999;
+}
+
+.label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid #ccc;
+    color: rgb(10, 41, 10);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: #333;
+}
+
+button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: green;
+}
+
+.signup-prompt {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-prompt a {
+    color: green;
+    text-decoration: underline;
+}
+
+.continue-with-google {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #4285F4;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-with-google:hover{
+    background-color: #2E6AE3;
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social div{
+    background-image: url('C:\\Users\\PKN\\Downloads\\logo (2)');
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 20px;
+    color: green;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.social div:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}

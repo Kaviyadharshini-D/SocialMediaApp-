@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form-Farmly</title>
+</head>
+<body>
+    <app-signup></app-signup>
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<div class="title">FARMLY</div>
+<form id="loginForm" onsubmit="return validateForm()">
+    <h3>Signup here</h3>
+
+    <label for="first_name" class="label">First Name</label> 
+    <input type="text" placeholder="First Name" id="first_name" [(ngmodel)] = "signupObj.first_name">
+
+    <label for="last_name" class="label">Last Name</label>
+    <input type="text" placeholder="Last Name" id="last_name" [(ngmodel)] = "signupObj.last_name">
+
+    <label for="username" class="label">Username</label>
+    <input type="text" placeholder="Email or Phone" id="username" [(ngmodel)] = "signupObj.User_name">
+
+    <label for="password" class="label">Password</label>
+    <input type="password" placeholder="Password" id="password" [(ngmodel)] = "signupObj.password">
+
+    <label for="mobile_number" class="label">Mobile Number</label>
+    <input type="text" placeholder="Mobile Number" id="mobile_number" [(ngmodel)] = "signupObj.mobile_number">
+
+    <button type="submit">LOGIN</button>
+
+    <div class="signup-prompt">If you are an existing user, <a href="login.html">Login</a></div>
+    <center><p>(or)</p></center>
+
+    <button class="continue-with-google">Continue using Google</button>
+
+    <div class="error-message" id="errorMessage"></div>
+</form>
+
+<script>
+function validateForm() {
+    var firstName = document.getElementById("first_name").value;
+    var lastName = document.getElementById("last_name").value;
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var mobileNumber = document.getElementById("mobile_number").value;
+
+    if (firstName === "" || lastName === "" || username === "" || password === "" || mobileNumber === "") {
+        document.getElementById("errorMessage").innerHTML = "Please fill in all fields.";
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>
